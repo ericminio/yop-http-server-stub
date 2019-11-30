@@ -1,4 +1,5 @@
 {
+    "default": { "alive": true },
     "routes": [
         {
             "pattern": "can-you-see-me",
