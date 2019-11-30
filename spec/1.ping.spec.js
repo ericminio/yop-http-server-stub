@@ -2,9 +2,9 @@ const { expect } = require('chai')
 const { get } = require('./requests')
 const { extractBody } = require('../lib/body')
 
-describe('server', ()=>{
+describe('PING', ()=>{
 
-    it('is alive', (done)=>{
+    it('is available', (done)=>{
         get('/ping')((response)=>{
             expect(response.statusCode).to.equal(200);
             done()
