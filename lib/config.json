@@ -1,5 +1,9 @@
 {
-    "default": { "alive": true },
+    "default": {
+        "statusCode": 200,
+        "contentType": "application/json",
+        "answer": { "alive": true }
+    },
     "routes": [
         {
             "url": "can-you-see-me",
@@ -14,6 +18,12 @@
             "url": "create-something",
             "body": "ko",
             "answer": { "message": "sorry" }
+        },
+        {
+            "url": "not-found",
+            "status": 404,
+            "contentType": "text/plain",
+            "answer": "NOT FOUND"
         }
     ]
 }
