@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  stub:
+    build: .
+    image: stub:ready
+    container_name: stub
+    ports:
+      - "5005:5005"
+    volumes:
+      - ./lib:/opt/stub/lib
