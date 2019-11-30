@@ -21,7 +21,7 @@
         },
         {
             "url": "not-found",
-            "status": 404,
+            "statusCode": 404,
             "contentType": "text/plain",
             "answer": "NOT FOUND"
         }
