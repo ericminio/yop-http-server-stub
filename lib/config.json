@@ -2,8 +2,18 @@
     "default": { "alive": true },
     "routes": [
         {
-            "pattern": "can-you-see-me",
+            "url": "can-you-see-me",
             "answer": { "message": "Yes I can!" }
+        },
+        {
+            "url": "create-something",
+            "body": "ok",
+            "answer": { "message": "all good" }
+        },
+        {
+            "url": "create-something",
+            "body": "ko",
+            "answer": { "message": "sorry" }
         }
     ]
 }
