@@ -47,18 +47,6 @@
                 "contentType": "text/plain",
                 "body": "NOT FOUND"
             }
-        },
-        {
-            "incoming": {
-                "url": "ping/.*"
-            },
-            "answer": {
-                "statusCode": 200,
-                "contentType": "application/json",
-                "body": {
-                    "alive": true
-                }
-            }
         }
     ]
 }
