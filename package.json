@@ -1,7 +1,7 @@
 {
   "name": "yop-http-server-stub",
   "version": "1.0.0",
-  "description": "",
+  "description": "the only stub you need",
   "main": "lib/index.js",
   "directories": {
     "lib": "lib"

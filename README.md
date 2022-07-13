@@ -1,1 +1,1 @@
-[![Build Status](https://travis-ci.org/ericminio/yop-http-server-stub.svg?branch=master)](https://travis-ci.org/ericminio/yop-http-server-stub)
+[![CI](https://github.com/ericminio/yop-http-server-stub/actions/workflows/ci.yml/badge.svg)](https://github.com/ericminio/yop-http-server-stub/actions/workflows/ci.yml)

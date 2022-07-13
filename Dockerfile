@@ -1,10 +1,10 @@
-FROM node:10.17.0
+FROM node:14.17.1
 
 COPY ./lib/* /opt/stub/lib/
 COPY ./package.json /opt/stub/package.json
-COPY ./yarn.lock /opt/stub/yarn.lock
+COPY ./package-lock.json /opt/stub/package-lock.json
 
 WORKDIR /opt/stub
-RUN yarn
+RUN npm install
 
 CMD ["npm", "run", "start"]
