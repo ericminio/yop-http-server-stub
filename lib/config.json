@@ -1,36 +1,64 @@
 {
     "routes": [
         {
-            "url": "can-you-see-me",
-            "statusCode": 200,
-            "contentType": "application/json",
-            "answer": { "message": "Yes I can!" }
+            "incoming": {
+                "url": "can-you-see-me"
+            },
+            "answer": {
+                "statusCode": 200,
+                "contentType": "application/json",
+                "body": {
+                    "message": "Yes I can!"
+                }
+            }
         },
         {
-            "url": "create-something",
-            "body": "ok",
-            "statusCode": 200,
-            "contentType": "application/json",
-            "answer": { "message": "all good" }
+            "incoming": {
+                "url": "create-something",
+                "body": "ok"
+            },
+            "answer": {
+                "statusCode": 200,
+                "contentType": "application/json",
+                "body": {
+                    "message": "all good"
+                }
+            }
         },
         {
-            "url": "create-something",
-            "body": "ko",
-            "statusCode": 200,
-            "contentType": "application/json",
-            "answer": { "message": "sorry" }
+            "incoming": {
+                "url": "create-something",
+                "body": "ko"
+            },
+            "answer": {
+                "statusCode": 200,
+                "contentType": "application/json",
+                "body": {
+                    "message": "sorry"
+                }
+            }
         },
         {
-            "url": "not-found",
-            "statusCode": 404,
-            "contentType": "text/plain",
-            "answer": "NOT FOUND"
+            "incoming": {
+                "url": "not-found"
+            },
+            "answer": {
+                "statusCode": 404,
+                "contentType": "text/plain",
+                "body": "NOT FOUND"
+            }
         },
         {
-            "url": "ping/.*",
-            "statusCode": 200,
-            "contentType": "application/json",
-            "answer": { "alive": true }
+            "incoming": {
+                "url": "ping/.*"
+            },
+            "answer": {
+                "statusCode": 200,
+                "contentType": "application/json",
+                "body": {
+                    "alive": true
+                }
+            }
         }
     ]
 }
