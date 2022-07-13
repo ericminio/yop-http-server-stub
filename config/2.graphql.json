@@ -1,0 +1,16 @@
+{
+    "routes": [
+        {
+            "incoming": {
+                "body": "\"query\".*greetings"
+            },
+            "answer": {
+                "statusCode": 200,
+                "contentType": "application/json",
+                "body": {
+                    "data": { "greetings": "hello world" }
+                }
+            }
+        }
+    ]
+}
