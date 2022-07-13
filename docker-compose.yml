@@ -8,4 +8,4 @@ services:
     ports:
       - "5005:5005"
     volumes:
-      - ./lib:/opt/stub/lib
+      - ./config:/opt/stub/config

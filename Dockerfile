@@ -1,6 +1,7 @@
 FROM node:14.17.1
 
 COPY ./lib/* /opt/stub/lib/
+COPY ./config/* /opt/stub/config/
 COPY ./package.json /opt/stub/package.json
 COPY ./package-lock.json /opt/stub/package-lock.json
 
