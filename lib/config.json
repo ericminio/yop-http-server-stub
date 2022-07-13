@@ -1,22 +1,23 @@
 {
-    "default": {
-        "statusCode": 200,
-        "contentType": "application/json",
-        "answer": { "alive": true }
-    },
     "routes": [
         {
             "url": "can-you-see-me",
+            "statusCode": 200,
+            "contentType": "application/json",
             "answer": { "message": "Yes I can!" }
         },
         {
             "url": "create-something",
             "body": "ok",
+            "statusCode": 200,
+            "contentType": "application/json",
             "answer": { "message": "all good" }
         },
         {
             "url": "create-something",
             "body": "ko",
+            "statusCode": 200,
+            "contentType": "application/json",
             "answer": { "message": "sorry" }
         },
         {
@@ -24,6 +25,12 @@
             "statusCode": 404,
             "contentType": "text/plain",
             "answer": "NOT FOUND"
+        },
+        {
+            "url": "ping/.*",
+            "statusCode": 200,
+            "contentType": "application/json",
+            "answer": { "alive": true }
         }
     ]
 }
